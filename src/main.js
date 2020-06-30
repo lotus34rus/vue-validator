@@ -3,6 +3,8 @@ import App from './App.vue'
 
 import RuPage from './components/RuPage'
 import BelPage from './components/BelPage'
+import UkrPage from './components/UkrPage'
+
 
 import MainPage from './components/MainPage'
 
@@ -17,7 +19,9 @@ Vue.config.productionTip = false
 const routes = [
   { path: '/ru', component: RuPage },
   { path: '/rb', component: BelPage },
+  { path: '/ukr', component: UkrPage },
   { path: '/', component: MainPage },
+
 ]
 
 // Создаём экземпляр маршрутизатора и передаём маршруты в опции `routes`

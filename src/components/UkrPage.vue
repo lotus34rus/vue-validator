@@ -14,7 +14,7 @@
             <form id="validated">
                 <textarea v-model="validated" id='validated_phones' name="validated_phones" cols="30" rows="10"></textarea>
             </form>
-            <button v-on:click="addSeven()">Добавить "375"</button>
+            <button v-on:click="addSeven()">Добавить "380"</button>
             <button v-on:click="copy()">Скопировать</button>
             <a download="result.txt" id="test" href="#">Скачать файл</a>
         </div>
@@ -32,7 +32,7 @@
 <script>
 export default {
 
-  name: 'BelPage',
+  name: 'UkrPage',
 
   data: function(){
       return {
@@ -47,7 +47,7 @@ export default {
             let phones = this.validated.trim().split('\n');
 
             let result =  phones.map((item)=>{
-                return "375"+item;
+                return "380"+item;
             });
             
             this.validated = result.join('\n');
@@ -66,7 +66,7 @@ export default {
             phonesForValidate.forEach((item)=>{
 
             let current = item.replace(/\D+/g, ''); // Clear current phone number        
-            if(current.startsWith('375')){ //Если номер начинается с +7
+            if(current.startsWith('380')){ //Если номер начинается с +7
 
                 if(current.length == 12){
                 

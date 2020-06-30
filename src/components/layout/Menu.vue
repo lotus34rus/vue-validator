@@ -6,7 +6,7 @@
                  <router-link to="/">Главная</router-link>
                  <router-link to="/ru">Номера РФ</router-link>
                  <router-link to="/rb">Номера РБ</router-link>
-
+                 <router-link to="/ukr">Номера Украина</router-link>
             </ul>
         </div>
     </nav>
@@ -16,11 +16,6 @@
 <script>
 export default {
     name: 'Menu',
-    // data: function(){
-    //     return {
-
-    //     }
-    // },
 }
 </script>
 
