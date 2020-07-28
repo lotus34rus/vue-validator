@@ -1,24 +1,21 @@
-# phone-validator
+# Сервис очистки базы телефонных номеров 
 
-## Project setup
+## Используемые библиотеки
 ```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
+vuejs, vue-router , webpack
 ```
 
-### Compiles and minifies for production
+### Ссылка на работоспособную версию
 ```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
+http://tools.dm-code.ru/#/
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Порядок работы
+
+1) Переходим на вкладку нужной страны.
+2) В поле "Исходный список" вставляем базу номеров.
+3) В поле "Список валидных номеров" получаем базу ,очищенную от лишнего и готовую к рассылке.
+
+Сервис очищает от лишних символов, имен, знаков. Так же из базы удаляются все городские номера и номера с некорректной длиной
+
+Кнопка "Скачать файл" генерирует .TXT файл с очищенной базой.
